@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\MG.DAL.Cassandra\MG.DAL.Cassandra.csproj" />
+    <ProjectReference Include="..\..\DAL\MG.DAL.Mongo\MG.DAL.Mongo.csproj" />
+    <ProjectReference Include="..\..\DAL\MG.DAL.Repositories\MG.DAL.Repositories.csproj" />
+    <ProjectReference Include="..\..\Logging\MG.Logging\MG.Logging.csproj" />
+    <ProjectReference Include="..\..\Queue\RabbitMQ\MG.Queue.RabbitMQ\MG.Queue.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\Services\MG.Services.FileService\MG.Services.FileService.csproj" />
+    <ProjectReference Include="..\..\Services\MG.Services.HttpServices\MG.Services.HttpServices.csproj" />
+    <ProjectReference Include="..\..\Settings\MG.Settings.Configuration\MG.Settings.Configuration.csproj" />
+    <ProjectReference Include="..\..\Shared\MG.Shared.Configurations\MG.Shared.Configurations.csproj" />
+    <ProjectReference Include="..\..\Shared\MG.Shared.WebAPIResponseWrapper\MG.Shared.WebAPIResponseWrapper.csproj" />
+  </ItemGroup>
+
+
+</Project>

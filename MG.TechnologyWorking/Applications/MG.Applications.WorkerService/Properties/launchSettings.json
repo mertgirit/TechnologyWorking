@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "MG.Applications.WorkerService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

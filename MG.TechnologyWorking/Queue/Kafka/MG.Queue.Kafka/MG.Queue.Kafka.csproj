@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interface\**" />
+    <EmbeddedResource Remove="Interface\**" />
+    <None Remove="Interface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.5.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\MG.Shared.Configurations\MG.Shared.Configurations.csproj" />
+    <ProjectReference Include="..\..\..\Shared\MG.Shared.Enums\MG.Shared.Enums.csproj" />
+    <ProjectReference Include="..\..\..\Shared\MG.Shared.ExtensionMethods\MG.Shared.ExtensionMethods.csproj" />
+  </ItemGroup>
+
+</Project>
