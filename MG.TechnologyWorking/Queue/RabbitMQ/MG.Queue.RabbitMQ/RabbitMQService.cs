@@ -200,7 +200,7 @@ namespace MG.Queue.RabbitMQ
             }
 
             //TODO MG: messageValidate
-            List<byte[]> dataListBytes = new List<byte[]>();
+            List<ReadOnlyMemory<byte>> dataListBytes = new List<ReadOnlyMemory<byte>>();
 
             try
             {
